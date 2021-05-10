@@ -108,7 +108,7 @@ export default function SwapModalFooter({
           variant={severity > 2 && isVeganInput ? 'danger' : 'primary'}
           mt="10px"
           id="confirm-swap-or-send"
-          fullWidth
+          width="100%"
         >
           {severity > 2 && isVeganInput ? 'Swap Anyway' : 'Confirm Swap'}
         </Button>

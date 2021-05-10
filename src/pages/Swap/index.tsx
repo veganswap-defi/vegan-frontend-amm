@@ -405,9 +405,9 @@ const Swap = () => {
             </AutoColumn>
             <BottomGrouping>
               {!account ? (
-                <ConnectWalletButton fullWidth />
+                <ConnectWalletButton width="100%" />
               ) : showWrap ? (
-                <Button disabled={Boolean(wrapInputError)} onClick={onWrap} fullWidth>
+                <Button disabled={Boolean(wrapInputError)} onClick={onWrap} width="100%">
                   {wrapInputError ??
                     (wrapType === WrapType.WRAP ? 'Wrap' : wrapType === WrapType.UNWRAP ? 'Unwrap' : null)}
                 </Button>
@@ -477,7 +477,7 @@ const Swap = () => {
                   id="swap-button"
                   disabled={!isValid || (priceImpactSeverity > 3 && !isExpertMode) || !!swapCallbackError}
                   variant="primary"
-                  fullWidth
+                  width="100%"
                 >
                   {swapInputError || (priceImpactSeverity > 3 && !isExpertMode ? `Price Impact Too High` : `Swap`)}
                 </Button>
