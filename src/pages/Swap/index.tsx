@@ -287,11 +287,11 @@ const Swap = () => {
 
   return (
     <>
-      <TokenWarningModal
+      {/* <TokenWarningModal
         isOpen={urlLoadedTokens.length > 0 && !dismissTokenWarning}
         tokens={urlLoadedTokens}
         onConfirm={handleConfirmTokenWarning}
-      />
+      /> */}
       <SyrupWarningModal
         isOpen={isSyrup}
         transactionType={syrupTransactionType}
